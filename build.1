@@ -1,0 +1,43 @@
+.TH BUILD 1 2022-06-10 GNU
+
+.SH NAME
+build \- utility for managing build artifacts
+
+.SH SYNOPSIS
+.B build
+[\fBFLAG\fR]
+[\fBARGS\fR]...
+project_dir
+
+.SH DESCRIPTION
+Keep track of build and log artifacts from projects. Build tools used are cmake and make.
+
+.SH OPTIONS
+.TP
+FLAG sets conditions to change behaviour
+.TP
+.BR \-p
+displays cmake and make standard error to parent shell
+.TP
+ARGS gives arguements to use
+.TP
+.BR \-\-out\=\fIpath
+absolute path to write build files to
+.TP
+.BR \-\-log\=\fIpath
+absolute path to write logs to
+.TP
+project_dir
+top level directory of a project to build given as absolute path
+
+.SH NOTES
+
+using \-p does not write error in standard time but displays output once its been fully written to file
+
+using a new build directory for a project will automatically delete old build artifacts associated with the project
+
+.SH AUTHOR
+Written by Dennis Yakovlev
+
+.SH SEE ALSO
+\fBrun\fR(1)

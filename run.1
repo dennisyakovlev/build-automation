@@ -1,0 +1,31 @@
+.TH RUN 1 2022-06-10 GNU
+
+.SH NAME
+run \- utility for running outputed build artifacts
+
+.SH SYNOPSIS
+.B run
+\fBARGS\fR...
+[args]
+
+.SH DESCRIPTION
+Keep track of build and log artifacts from projects. Build tools used are cmake and make.
+
+.SH OPTIONS
+.TP
+.TP
+ARGS gives arguements to use
+.TP
+.BR \-\-proj\=\fIpath
+top level directory of a project to build given as absolute path
+.TP
+.BR \-\-exe\=\fIpath
+executable name produced by building
+.TP
+agrs are arguements to be passed to executable
+
+.SH AUTHOR
+Written by Dennis Yakovlev
+
+.SH SEE ALSO
+\fBbuild\fR(1)
